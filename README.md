@@ -1,6 +1,6 @@
-4413 Damazon WebApp Project
-Front End - React JS 
-Back End - SpringBoot Maven Tomcat Java
-DataBase - Sqlite
+4413 Damazon WebApp Project\n
+Front End - React JS \n
+Back End - SpringBoot Maven Tomcat Java\n
+DataBase - Sqlite \n
 
 
