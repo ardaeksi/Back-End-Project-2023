@@ -1,6 +1,6 @@
 ---
 title: Back-End of E-Commerce Site
-author: 
+author: Can Arda Eksioglu
 ---
 
 # 4413 Damazon WebApp Project
