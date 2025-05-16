@@ -10,9 +10,9 @@ spring:
 
 server:
   servlet:
-    context-path: /Damazon
+    context-path: /   #If deployed change this to something specific, also change in securityConfig & Controllers
 
 app:
-  jwtSecret: "bXlKV1RTZWNyZXRLZXkxMjMh"  # Unpredictable key :O wow
+  jwtSecret: "bXlKV1RTZWNyZXRLZXkxMjMh"  # Predictable key currently constant  !!IF DEPLOYED THIS NEEDS TO BE DYNAMIC, huge security breach)
   jwtExpirationInMs: 604800000  # Token Expiration: One week (in milliseconds)
 

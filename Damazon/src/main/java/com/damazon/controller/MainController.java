@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import com.damazon.dto.*;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping
 public class MainController {
 
     private final UserService userService;
@@ -26,7 +26,7 @@ public class MainController {
         this.orderService = orderService;
     }
 
-    // User endpoints
+    // Login endpoint
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest) {
     	User exUser = new User();

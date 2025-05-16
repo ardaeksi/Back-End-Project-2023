@@ -32,15 +32,14 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-    	System.out.println("s");
         http
             .csrf().disable()
             .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS) //We used tokens to validate so no need for state
             .and()
             .authorizeRequests()
-                .antMatchers("/api/admin/**").hasRole("ADMIN") //here we used security as role which is given in our CustomUserDetails
-                .antMatchers("/api/**").permitAll()
-                .anyRequest().authenticated()
+                    .antMatchers("/admin/**").hasRole("ADMIN")
+                    .antMatchers("/login", "/register", "/products/**").permitAll()
+                    .anyRequest().authenticated()
             .and()
             .addFilterBefore(new JwtTokenFilter(jwtTokenProvider), UsernamePasswordAuthenticationFilter.class);
 
