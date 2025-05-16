@@ -12,11 +12,11 @@ Technologies used:
 - SQLite / MySQL (or specify your DB)
 - RESTful APIs
 
-> This backend is designed to integrate with a React-based frontend, enabling a full-stack web application experience.
+> This backend is designed to integrate with a React-based frontend, enabling a full-stack web application.
 
 # Backend API Documentation
 
-## 🔐 AUTHENTICATION
+## AUTHENTICATION
 
 ### POST `/login`
 Login user using credentials  
@@ -66,7 +66,7 @@ Register a new user
 
 ---
 
-## 👤 USER ENDPOINTS
+## USER ENDPOINTS
 
 ### POST `/getUser`
 Fetch user information  
@@ -179,7 +179,7 @@ Place an order for the current cart
 
 ---
 
-## 🛒 PRODUCT ENDPOINTS
+## PRODUCT ENDPOINTS
 
 ### GET `/products`
 Get all available products  
@@ -215,7 +215,7 @@ Get product details by ID
 
 ---
 
-## 🔐 ADMIN ENDPOINTS
+## ADMIN ENDPOINTS
 
 ### POST `/admin/getAllUserOrder`
 Return all users' orders  
@@ -240,7 +240,7 @@ Admin deletes any user's order
 
 ---
 
-## ⚠️ ERROR CODES
+## ERROR CODES
 
 | Code | Meaning |
 |------|---------|
