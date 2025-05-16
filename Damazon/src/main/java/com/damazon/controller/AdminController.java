@@ -10,7 +10,7 @@ import com.damazon.service.*;
 
 
 @RestController
-@RequestMapping("/api/admin")
+@RequestMapping("/admin")
 @PreAuthorize("hasRole('ADMIN')") //Admin can only reach with class
 public class AdminController {
 
