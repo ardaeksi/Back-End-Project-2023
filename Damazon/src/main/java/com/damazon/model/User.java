@@ -3,15 +3,15 @@ package com.damazon.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "users")  
+@Table(name = "Users")  
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
+    @Column(name = "userId")
     private Long id;
     
-    @Column(name = "user_name", unique = true, nullable = false)
+    @Column(name = "userName", unique = true, nullable = false)
     private String username;  
 
     @Column(name = "password", nullable = false)
