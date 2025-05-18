@@ -1,6 +1,5 @@
 package com.damazon.service;
 
-import com.damazon.dto.AuthenticationResponse;
 import com.damazon.model.User;
 import com.damazon.repository.UserRepository;
 import com.damazon.security.JwtTokenProvider;
