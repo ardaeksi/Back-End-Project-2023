@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:sqlite:StoreDB.db  # Connected db address
+    url: jdbc:sqlite:src/main/resources/StoreDB.db
     driver-class-name: org.sqlite.JDBC
   jpa:
     database-platform: com.damazon.config.SQLiteDialect

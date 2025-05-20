@@ -3,7 +3,7 @@ package com.damazon.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "wallets")
+@Table(name = "Wallets")
 public class Wallet {
 
     @Id
