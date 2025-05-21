@@ -11,14 +11,14 @@ public class User {
     @Column(name = "userId")
     private Long userId;
     
+    @Column(name = "isAdmin", nullable = false)
+    private int isAdmin;  // 0 = user ,  1 = Admin
+    
     @Column(name = "userName", unique = true, nullable = false)
     private String username;  
 
     @Column(name = "password", nullable = false)
     private String password;  
-
-    @Column(name = "isAdmin", nullable = false)
-    private int isAdmin;  // 0 = user ,  1 = Admin
 
     @Column(name = "walletId")
     private Integer walletId;  

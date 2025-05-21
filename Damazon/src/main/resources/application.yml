@@ -6,11 +6,23 @@ spring:
     database-platform: com.damazon.config.SQLiteDialect
     show-sql: true
     hibernate:
-      ddl-auto: none	  
+      ddl-auto: none
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+        dialect: com.damazon.config.SQLiteDialect
+        temp:
+          use_jdbc_metadata_defaults: false  # Avoid SQLite metadata issues
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
 server:
   servlet:
-    context-path: /   #If deployed change this to something specific, also change in securityConfig & Controllers
+    context-path: /
 
 app:
   jwtSecret: "bXlKV1RTZWNyZXRLZXkxMjMh"  # Predictable key currently constant  !!IF DEPLOYED THIS NEEDS TO BE DYNAMIC, huge security breach)
