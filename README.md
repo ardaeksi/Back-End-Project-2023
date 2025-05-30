@@ -9,7 +9,7 @@ Technologies used:
 - Spring Boot
 - Tomcat
 - Maven
-- SQLite / MySQL (or specify your DB)
+- SQLite
 - RESTful APIs
 
 > This backend is designed to integrate with a React-based frontend, enabling a full-stack web application.
@@ -23,7 +23,7 @@ Login user using credentials
 **Request Body:**
 ```json
 {
-  "userName": "johnDoe",
+  "userName": "user",
   "password": "examplePassword"
 }
 ```
